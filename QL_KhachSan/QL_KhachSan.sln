@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QL_KhachSan", "QL_KhachSan.csproj", "{E605F659-B1EE-410E-9598-7A8AC38EA3BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "..\DBLayer\DBLayer.csproj", "{BA232DB8-42DA-4C02-92B6-3362C750EB93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BALayer", "..\BALayer\BALayer.csproj", "{DFBD015A-4B73-4ED9-B3C4-FADF2D8CD0B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E605F659-B1EE-410E-9598-7A8AC38EA3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E605F659-B1EE-410E-9598-7A8AC38EA3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E605F659-B1EE-410E-9598-7A8AC38EA3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E605F659-B1EE-410E-9598-7A8AC38EA3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA232DB8-42DA-4C02-92B6-3362C750EB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA232DB8-42DA-4C02-92B6-3362C750EB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA232DB8-42DA-4C02-92B6-3362C750EB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA232DB8-42DA-4C02-92B6-3362C750EB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBD015A-4B73-4ED9-B3C4-FADF2D8CD0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBD015A-4B73-4ED9-B3C4-FADF2D8CD0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBD015A-4B73-4ED9-B3C4-FADF2D8CD0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBD015A-4B73-4ED9-B3C4-FADF2D8CD0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {889A5117-C154-4D96-866D-A3CD6DE01919}
+	EndGlobalSection
+EndGlobal

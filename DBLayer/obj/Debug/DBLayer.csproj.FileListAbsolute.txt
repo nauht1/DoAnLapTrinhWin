@@ -1,0 +1,6 @@
+E:\UTE\Docs\WindowsApp\DBLayer\bin\Debug\DBLayer.dll
+E:\UTE\Docs\WindowsApp\DBLayer\bin\Debug\DBLayer.pdb
+E:\UTE\Docs\WindowsApp\DBLayer\obj\Debug\DBLayer.csproj.AssemblyReference.cache
+E:\UTE\Docs\WindowsApp\DBLayer\obj\Debug\DBLayer.csproj.CoreCompileInputs.cache
+E:\UTE\Docs\WindowsApp\DBLayer\obj\Debug\DBLayer.dll
+E:\UTE\Docs\WindowsApp\DBLayer\obj\Debug\DBLayer.pdb
