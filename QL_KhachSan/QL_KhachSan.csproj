@@ -33,10 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BALayer">
+    <Reference Include="BALayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BALayer\bin\Debug\BALayer.dll</HintPath>
     </Reference>
-    <Reference Include="DBLayer">
+    <Reference Include="DBLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BALayer\bin\Debug\DBLayer.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
