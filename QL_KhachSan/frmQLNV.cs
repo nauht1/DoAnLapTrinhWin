@@ -62,9 +62,9 @@ namespace QL_KhachSan
                 this.mBtnXoa.Enabled = true;
                 mdgvNhanVien_CellClick(null, null);
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Có lỗi rồi !!!", "Thông báo");
+                MessageBox.Show("Có lỗi!!!", "Thông báo");
             }
         }
 
