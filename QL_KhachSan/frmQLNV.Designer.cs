@@ -32,13 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mdgvNhanVien = new MetroFramework.Controls.MetroGrid();
-            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVu = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoatDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mBtnReload = new MetroFramework.Controls.MetroButton();
             this.mBtnThem = new MetroFramework.Controls.MetroButton();
             this.mBtnSua = new MetroFramework.Controls.MetroButton();
@@ -57,6 +50,13 @@
             this.mCboGioiTinh = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.mTxtMaNhanVien = new MetroFramework.Controls.MetroTextBox();
+            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoatDong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.mdgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,65 +116,6 @@
             this.mdgvNhanVien.TabIndex = 0;
             this.mdgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.mdgvNhanVien_CellClick);
             // 
-            // MaNhanVien
-            // 
-            this.MaNhanVien.DataPropertyName = "MaNhanVien";
-            this.MaNhanVien.HeaderText = "Mã NV";
-            this.MaNhanVien.Name = "MaNhanVien";
-            this.MaNhanVien.ReadOnly = true;
-            this.MaNhanVien.Width = 105;
-            // 
-            // TenNhanVien
-            // 
-            this.TenNhanVien.DataPropertyName = "TenNhanVien";
-            this.TenNhanVien.HeaderText = "Tên NV";
-            this.TenNhanVien.Name = "TenNhanVien";
-            this.TenNhanVien.ReadOnly = true;
-            this.TenNhanVien.Width = 105;
-            // 
-            // ChucVu
-            // 
-            this.ChucVu.DataPropertyName = "MaChucVu";
-            this.ChucVu.HeaderText = "Chức vụ";
-            this.ChucVu.Name = "ChucVu";
-            this.ChucVu.ReadOnly = true;
-            this.ChucVu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ChucVu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ChucVu.Width = 105;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.GioiTinh.Width = 105;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 105;
-            // 
-            // SoDienThoai
-            // 
-            this.SoDienThoai.DataPropertyName = "SoDienThoai";
-            this.SoDienThoai.HeaderText = "Số ĐT";
-            this.SoDienThoai.Name = "SoDienThoai";
-            this.SoDienThoai.ReadOnly = true;
-            this.SoDienThoai.Width = 105;
-            // 
-            // HoatDong
-            // 
-            this.HoatDong.DataPropertyName = "HoatDong";
-            this.HoatDong.HeaderText = "Hoạt động";
-            this.HoatDong.Name = "HoatDong";
-            this.HoatDong.ReadOnly = true;
-            this.HoatDong.Width = 105;
-            // 
             // mBtnReload
             // 
             this.mBtnReload.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -185,6 +126,7 @@
             this.mBtnReload.TabIndex = 1;
             this.mBtnReload.Text = "Reload";
             this.mBtnReload.UseSelectable = true;
+            this.mBtnReload.Click += new System.EventHandler(this.mBtnReload_Click);
             // 
             // mBtnThem
             // 
@@ -196,6 +138,7 @@
             this.mBtnThem.TabIndex = 1;
             this.mBtnThem.Text = "Them";
             this.mBtnThem.UseSelectable = true;
+            this.mBtnThem.Click += new System.EventHandler(this.mBtnThem_Click);
             // 
             // mBtnSua
             // 
@@ -207,6 +150,7 @@
             this.mBtnSua.TabIndex = 1;
             this.mBtnSua.Text = "Sua";
             this.mBtnSua.UseSelectable = true;
+            this.mBtnSua.Click += new System.EventHandler(this.mBtnSua_Click);
             // 
             // mBtnLuu
             // 
@@ -218,6 +162,7 @@
             this.mBtnLuu.TabIndex = 1;
             this.mBtnLuu.Text = "Luu";
             this.mBtnLuu.UseSelectable = true;
+            this.mBtnLuu.Click += new System.EventHandler(this.mBtnLuu_Click);
             // 
             // mBtnHuy
             // 
@@ -229,6 +174,7 @@
             this.mBtnHuy.TabIndex = 1;
             this.mBtnHuy.Text = "Huy";
             this.mBtnHuy.UseSelectable = true;
+            this.mBtnHuy.Click += new System.EventHandler(this.mBtnHuy_Click);
             // 
             // mBtnXoa
             // 
@@ -240,6 +186,7 @@
             this.mBtnXoa.TabIndex = 1;
             this.mBtnXoa.Text = "Xoa";
             this.mBtnXoa.UseSelectable = true;
+            this.mBtnXoa.Click += new System.EventHandler(this.mBtnXoa_Click);
             // 
             // metroLabel1
             // 
@@ -305,6 +252,7 @@
             this.mTxtTenNhanVien.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.mTxtTenNhanVien.CustomButton.UseSelectable = true;
             this.mTxtTenNhanVien.CustomButton.Visible = false;
+            this.mTxtTenNhanVien.Enabled = false;
             this.mTxtTenNhanVien.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.mTxtTenNhanVien.Lines = new string[0];
             this.mTxtTenNhanVien.Location = new System.Drawing.Point(140, 121);
@@ -337,6 +285,7 @@
             this.mTxtDiaChi.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.mTxtDiaChi.CustomButton.UseSelectable = true;
             this.mTxtDiaChi.CustomButton.Visible = false;
+            this.mTxtDiaChi.Enabled = false;
             this.mTxtDiaChi.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.mTxtDiaChi.Lines = new string[0];
             this.mTxtDiaChi.Location = new System.Drawing.Point(524, 121);
@@ -369,6 +318,7 @@
             this.mTxtSDT.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.mTxtSDT.CustomButton.UseSelectable = true;
             this.mTxtSDT.CustomButton.Visible = false;
+            this.mTxtSDT.Enabled = false;
             this.mTxtSDT.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.mTxtSDT.Lines = new string[0];
             this.mTxtSDT.Location = new System.Drawing.Point(524, 205);
@@ -389,6 +339,7 @@
             // 
             // mCboChucVu
             // 
+            this.mCboChucVu.Enabled = false;
             this.mCboChucVu.FormattingEnabled = true;
             this.mCboChucVu.ItemHeight = 23;
             this.mCboChucVu.Location = new System.Drawing.Point(140, 160);
@@ -400,6 +351,7 @@
             // mCboGioiTinh
             // 
             this.mCboGioiTinh.BackColor = System.Drawing.SystemColors.Window;
+            this.mCboGioiTinh.Enabled = false;
             this.mCboGioiTinh.ForeColor = System.Drawing.SystemColors.WindowText;
             this.mCboGioiTinh.FormattingEnabled = true;
             this.mCboGioiTinh.ItemHeight = 23;
@@ -455,6 +407,65 @@
             this.mTxtMaNhanVien.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.mTxtMaNhanVien.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // MaNhanVien
+            // 
+            this.MaNhanVien.DataPropertyName = "MaNhanVien";
+            this.MaNhanVien.HeaderText = "Mã NV";
+            this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.ReadOnly = true;
+            this.MaNhanVien.Width = 105;
+            // 
+            // TenNhanVien
+            // 
+            this.TenNhanVien.DataPropertyName = "TenNhanVien";
+            this.TenNhanVien.HeaderText = "Tên NV";
+            this.TenNhanVien.Name = "TenNhanVien";
+            this.TenNhanVien.ReadOnly = true;
+            this.TenNhanVien.Width = 105;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.DataPropertyName = "MaChucVu";
+            this.ChucVu.HeaderText = "Chức vụ";
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.ReadOnly = true;
+            this.ChucVu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ChucVu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ChucVu.Width = 105;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GioiTinh.Width = 105;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 105;
+            // 
+            // SoDienThoai
+            // 
+            this.SoDienThoai.DataPropertyName = "SoDienThoai";
+            this.SoDienThoai.HeaderText = "Số ĐT";
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.ReadOnly = true;
+            this.SoDienThoai.Width = 105;
+            // 
+            // HoatDong
+            // 
+            this.HoatDong.DataPropertyName = "HoatDong";
+            this.HoatDong.HeaderText = "Hoạt động";
+            this.HoatDong.Name = "HoatDong";
+            this.HoatDong.ReadOnly = true;
+            this.HoatDong.Width = 105;
+            // 
             // frmQLNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -509,6 +520,8 @@
         private MetroFramework.Controls.MetroTextBox mTxtSDT;
         private MetroFramework.Controls.MetroComboBox mCboChucVu;
         private MetroFramework.Controls.MetroComboBox mCboGioiTinh;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Controls.MetroTextBox mTxtMaNhanVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNhanVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNhanVien;
         private System.Windows.Forms.DataGridViewComboBoxColumn ChucVu;
@@ -516,8 +529,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoatDong;
-        private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Controls.MetroTextBox mTxtMaNhanVien;
     }
 }
 

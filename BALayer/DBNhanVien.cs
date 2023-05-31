@@ -27,5 +27,31 @@ namespace BALayer
             da.Fill(dt);
             return dt;
         }
+        public bool ThemNhanVien(ref string err, int maChucVu, string tenNhanVien, 
+            string gioiTinh, string diaChi, string soDienThoai)
+        {
+            return db.MyExecuteNonQuery("spThemNhanVien", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maChucVu", maChucVu),
+                new SqlParameter("@tenNhanVien", tenNhanVien),
+                new SqlParameter("@gioiTinh", gioiTinh),
+                new SqlParameter("@diaChi", diaChi),
+                new SqlParameter("@soDienThoai", soDienThoai));
+        }
+        public bool CapNhatNhanVien(ref string err, int maNhanVien, int maChucVu, string tenNhanVien,
+            string gioiTinh, string diaChi, string soDienThoai)
+        {
+            return db.MyExecuteNonQuery("spCapNhatNhanVien", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maNhanVien", maNhanVien),
+                new SqlParameter("@maChucVu", maChucVu),
+                new SqlParameter("@tenNhanVien", tenNhanVien),
+                new SqlParameter("@gioiTinh", gioiTinh),
+                new SqlParameter("@diaChi", diaChi),
+                new SqlParameter("@soDienThoai", soDienThoai));
+        }
+        public bool XoaNhanVien(ref string err, int maNhanVien)
+        {
+            return db.MyExecuteNonQuery("spXoaNhanVien", CommandType.StoredProcedure, 
+                ref err, new SqlParameter("@maNhanVien", maNhanVien));
+        }
     }
 }
