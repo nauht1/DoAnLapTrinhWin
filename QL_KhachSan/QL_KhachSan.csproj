@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmQLDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLDatPhong.Designer.cs">
+      <DependentUpon>frmQLDatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="frmQLDanhGia.resx">
       <DependentUpon>frmQLDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLDatPhong.resx">
+      <DependentUpon>frmQLDatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLKH.resx">
       <DependentUpon>frmQLKH.cs</DependentUpon>
