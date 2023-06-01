@@ -39,3 +39,4 @@ E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.pdb
 E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLKH.resources
 E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLDanhGia.resources
 E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLDatPhong.resources
+E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmMain.resources

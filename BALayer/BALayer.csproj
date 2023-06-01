@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="DBDanhGia.cs" />
     <Compile Include="DBKhachHang.cs" />
-    <Compile Include="DBLoaiPhong.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBPhieuDatPhong.cs" />
     <Compile Include="DBPhong.cs" />
