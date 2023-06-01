@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QL_KhachSan
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class frmQLDatPhong : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public frmQLDatPhong()
         {
             InitializeComponent();
         }
