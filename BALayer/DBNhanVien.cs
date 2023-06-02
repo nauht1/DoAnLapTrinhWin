@@ -27,6 +27,22 @@ namespace BALayer
             da.Fill(dt);
             return dt;
         }
+        public bool XoaChucVu(ref string err, int maChucVu) 
+        {
+            return db.MyExecuteNonQuery("spXoaChucVu", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maChucVu", maChucVu));
+        }
+        public bool ThemChucVu(ref string err, string tenChucVu)
+        {
+            return db.MyExecuteNonQuery("spThemChucVu", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@tenChucVu", tenChucVu));
+        }
+        public bool CapNhatChucVu(ref string err, int maChucVu, string tenChucVu)
+        {
+            return db.MyExecuteNonQuery("spCapNhatChucVu", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maChucVu", maChucVu),
+                new SqlParameter("@tenChucVu", tenChucVu));
+        }
         public bool ThemNhanVien(ref string err, int maChucVu, string tenNhanVien, 
             string gioiTinh, string diaChi, string soDienThoai)
         {
