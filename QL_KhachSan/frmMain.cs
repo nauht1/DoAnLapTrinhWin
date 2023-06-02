@@ -64,5 +64,22 @@ namespace QL_KhachSan
             frmQLTaiKhoan frmQLTK = new frmQLTaiKhoan();
             frmQLTK.ShowDialog();
         }
+
+        private void titleDichVu_Click(object sender, EventArgs e)
+        {
+            frmQLDichVu frmQLDV = new frmQLDichVu();
+            frmQLDV.ShowDialog();
+        }
+
+        private void TitlePhieuDichVu_Click(object sender, EventArgs e)
+        {
+            frmQLPhieuDichVu frmQLPhieuDichVu = new frmQLPhieuDichVu();
+            frmQLPhieuDichVu.ShowDialog();
+        }
+
+        private void mBtnThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

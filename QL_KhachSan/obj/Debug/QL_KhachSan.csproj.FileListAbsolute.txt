@@ -44,3 +44,7 @@ E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLPhong
 E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLLoaiPhong.resources
 E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLChucVu.resources
 E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLTaiKhoan.resources
+E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLDichVu.resources
+E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmQLPhieuDichVu.resources
+E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmDangNhap.resources
+E:\UTE\Docs\WindowsApp\FinalProject\QL_KhachSan\obj\Debug\QL_KhachSan.frmThongTinCaNhan.resources

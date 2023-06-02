@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     <Compile Include="frmQLDatPhong.Designer.cs">
       <DependentUpon>frmQLDatPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLDichVu.Designer.cs">
+      <DependentUpon>frmQLDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     <Compile Include="frmQLNV.Designer.cs">
       <DependentUpon>frmQLNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLPhieuDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLPhieuDichVu.Designer.cs">
+      <DependentUpon>frmQLPhieuDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +122,12 @@
     </Compile>
     <Compile Include="frmQLTaiKhoan.Designer.cs">
       <DependentUpon>frmQLTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinCaNhan.Designer.cs">
+      <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -119,6 +143,9 @@
     <Compile Include="frmQLLoaiPhong.Designer.cs">
       <DependentUpon>frmQLLoaiPhong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,17 +158,26 @@
     <EmbeddedResource Include="frmQLDatPhong.resx">
       <DependentUpon>frmQLDatPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQLDichVu.resx">
+      <DependentUpon>frmQLDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQLKH.resx">
       <DependentUpon>frmQLKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLNV.resx">
       <DependentUpon>frmQLNV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQLPhieuDichVu.resx">
+      <DependentUpon>frmQLPhieuDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQLPhong.resx">
       <DependentUpon>frmQLPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLTaiKhoan.resx">
       <DependentUpon>frmQLTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTinCaNhan.resx">
+      <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

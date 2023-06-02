@@ -46,9 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBDanhGia.cs" />
+    <Compile Include="DBDichVu.cs" />
     <Compile Include="DBKhachHang.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Compile Include="DBPhieuDatPhong.cs" />
+    <Compile Include="DBPhieuDichVu.cs" />
     <Compile Include="DBPhong.cs" />
     <Compile Include="DBTaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

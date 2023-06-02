@@ -32,8 +32,8 @@
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.mBtnDangXuat = new MetroFramework.Controls.MetroButton();
+            this.mBtnThongTin = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
             this.titleDatPhong = new MetroFramework.Controls.MetroTile();
             this.titleQLPhong = new MetroFramework.Controls.MetroTile();
@@ -46,6 +46,7 @@
             this.titleNhanVien = new MetroFramework.Controls.MetroTile();
             this.label2 = new System.Windows.Forms.Label();
             this.TileTaiKhoan = new MetroFramework.Controls.MetroTile();
+            this.TitlePhieuDichVu = new MetroFramework.Controls.MetroTile();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,8 +57,8 @@
             this.metroPanel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.metroPanel1.Controls.Add(this.pictureBox2);
             this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.Controls.Add(this.metroButton2);
-            this.metroPanel1.Controls.Add(this.metroButton1);
+            this.metroPanel1.Controls.Add(this.mBtnDangXuat);
+            this.metroPanel1.Controls.Add(this.mBtnThongTin);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
@@ -92,29 +93,30 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // metroButton2
+            // mBtnDangXuat
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton2.Location = new System.Drawing.Point(77, 514);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(193, 38);
-            this.metroButton2.TabIndex = 3;
-            this.metroButton2.Text = "     Đăng xuất";
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseSelectable = true;
+            this.mBtnDangXuat.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.mBtnDangXuat.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.mBtnDangXuat.Location = new System.Drawing.Point(77, 514);
+            this.mBtnDangXuat.Name = "mBtnDangXuat";
+            this.mBtnDangXuat.Size = new System.Drawing.Size(193, 38);
+            this.mBtnDangXuat.TabIndex = 3;
+            this.mBtnDangXuat.Text = "     Đăng xuất";
+            this.mBtnDangXuat.UseCustomBackColor = true;
+            this.mBtnDangXuat.UseSelectable = true;
             // 
-            // metroButton1
+            // mBtnThongTin
             // 
-            this.metroButton1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton1.Location = new System.Drawing.Point(77, 465);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(193, 43);
-            this.metroButton1.TabIndex = 1;
-            this.metroButton1.Text = "         Thông tin cá  nhân";
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseSelectable = true;
+            this.mBtnThongTin.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.mBtnThongTin.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.mBtnThongTin.Location = new System.Drawing.Point(77, 465);
+            this.mBtnThongTin.Name = "mBtnThongTin";
+            this.mBtnThongTin.Size = new System.Drawing.Size(193, 43);
+            this.mBtnThongTin.TabIndex = 1;
+            this.mBtnThongTin.Text = "         Thông tin cá  nhân";
+            this.mBtnThongTin.UseCustomBackColor = true;
+            this.mBtnThongTin.UseSelectable = true;
+            this.mBtnThongTin.Click += new System.EventHandler(this.mBtnThongTin_Click);
             // 
             // label1
             // 
@@ -186,13 +188,14 @@
             this.titleDichVu.UseSelectable = true;
             this.titleDichVu.UseStyleColors = true;
             this.titleDichVu.UseTileImage = true;
+            this.titleDichVu.Click += new System.EventHandler(this.titleDichVu_Click);
             // 
             // titleChucVu
             // 
             this.titleChucVu.ActiveControl = null;
             this.titleChucVu.BackColor = System.Drawing.Color.SteelBlue;
             this.titleChucVu.ForeColor = System.Drawing.Color.White;
-            this.titleChucVu.Location = new System.Drawing.Point(583, 271);
+            this.titleChucVu.Location = new System.Drawing.Point(583, 417);
             this.titleChucVu.Name = "titleChucVu";
             this.titleChucVu.Size = new System.Drawing.Size(140, 140);
             this.titleChucVu.TabIndex = 65;
@@ -336,11 +339,32 @@
             this.TileTaiKhoan.UseTileImage = true;
             this.TileTaiKhoan.Click += new System.EventHandler(this.TileTaiKhoan_Click);
             // 
+            // TitlePhieuDichVu
+            // 
+            this.TitlePhieuDichVu.ActiveControl = null;
+            this.TitlePhieuDichVu.BackColor = System.Drawing.Color.SteelBlue;
+            this.TitlePhieuDichVu.ForeColor = System.Drawing.Color.White;
+            this.TitlePhieuDichVu.Location = new System.Drawing.Point(583, 271);
+            this.TitlePhieuDichVu.Name = "TitlePhieuDichVu";
+            this.TitlePhieuDichVu.Size = new System.Drawing.Size(140, 140);
+            this.TitlePhieuDichVu.TabIndex = 68;
+            this.TitlePhieuDichVu.Text = "Quản Lí Đặt DV";
+            this.TitlePhieuDichVu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.TitlePhieuDichVu.TileImage = ((System.Drawing.Image)(resources.GetObject("TitlePhieuDichVu.TileImage")));
+            this.TitlePhieuDichVu.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TitlePhieuDichVu.UseCustomBackColor = true;
+            this.TitlePhieuDichVu.UseCustomForeColor = true;
+            this.TitlePhieuDichVu.UseSelectable = true;
+            this.TitlePhieuDichVu.UseStyleColors = true;
+            this.TitlePhieuDichVu.UseTileImage = true;
+            this.TitlePhieuDichVu.Click += new System.EventHandler(this.TitlePhieuDichVu_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 576);
+            this.Controls.Add(this.TitlePhieuDichVu);
             this.Controls.Add(this.TileTaiKhoan);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.titleChucVu);
@@ -380,10 +404,11 @@
         private MetroFramework.Controls.MetroTile titleDoanhThu;
         private MetroFramework.Controls.MetroTile titleNhanVien;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton mBtnThongTin;
+        private MetroFramework.Controls.MetroButton mBtnDangXuat;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private MetroFramework.Controls.MetroTile TileTaiKhoan;
+        private MetroFramework.Controls.MetroTile TitlePhieuDichVu;
     }
 }

@@ -92,7 +92,7 @@
             this.mdgvPhong.EnableHeadersVisualStyles = false;
             this.mdgvPhong.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.mdgvPhong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.mdgvPhong.Location = new System.Drawing.Point(23, 366);
+            this.mdgvPhong.Location = new System.Drawing.Point(23, 347);
             this.mdgvPhong.Name = "mdgvPhong";
             this.mdgvPhong.ReadOnly = true;
             this.mdgvPhong.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -147,7 +147,7 @@
             this.mdgvPhongDaChon.EnableHeadersVisualStyles = false;
             this.mdgvPhongDaChon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.mdgvPhongDaChon.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.mdgvPhongDaChon.Location = new System.Drawing.Point(23, 96);
+            this.mdgvPhongDaChon.Location = new System.Drawing.Point(23, 77);
             this.mdgvPhongDaChon.Name = "mdgvPhongDaChon";
             this.mdgvPhongDaChon.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -170,7 +170,7 @@
             // 
             this.metroButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.Location = new System.Drawing.Point(1038, 592);
+            this.metroButton1.Location = new System.Drawing.Point(1044, 573);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(80, 36);
             this.metroButton1.TabIndex = 57;
@@ -197,7 +197,7 @@
             this.mTxtTongTien.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.mTxtTongTien.Lines = new string[] {
         "0"};
-            this.mTxtTongTien.Location = new System.Drawing.Point(889, 366);
+            this.mTxtTongTien.Location = new System.Drawing.Point(895, 347);
             this.mTxtTongTien.MaxLength = 32767;
             this.mTxtTongTien.Multiline = true;
             this.mTxtTongTien.Name = "mTxtTongTien";
@@ -218,7 +218,7 @@
             // 
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel6.Location = new System.Drawing.Point(803, 366);
+            this.metroLabel6.Location = new System.Drawing.Point(809, 347);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(84, 25);
             this.metroLabel6.TabIndex = 59;
@@ -228,7 +228,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(17, 21);
+            this.metroLabel1.Location = new System.Drawing.Point(22, 21);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(63, 25);
             this.metroLabel1.TabIndex = 61;
@@ -389,7 +389,7 @@
             this.mPnKhachHang.HorizontalScrollbarBarColor = true;
             this.mPnKhachHang.HorizontalScrollbarHighlightOnWheel = false;
             this.mPnKhachHang.HorizontalScrollbarSize = 10;
-            this.mPnKhachHang.Location = new System.Drawing.Point(785, 96);
+            this.mPnKhachHang.Location = new System.Drawing.Point(798, 77);
             this.mPnKhachHang.Name = "mPnKhachHang";
             this.mPnKhachHang.Size = new System.Drawing.Size(333, 201);
             this.mPnKhachHang.TabIndex = 63;
@@ -401,7 +401,7 @@
             // 
             this.mBtnXacNhan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mBtnXacNhan.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.mBtnXacNhan.Location = new System.Drawing.Point(936, 592);
+            this.mBtnXacNhan.Location = new System.Drawing.Point(942, 573);
             this.mBtnXacNhan.Name = "mBtnXacNhan";
             this.mBtnXacNhan.Size = new System.Drawing.Size(80, 36);
             this.mBtnXacNhan.TabIndex = 64;
@@ -413,7 +413,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel5.Location = new System.Drawing.Point(803, 324);
+            this.metroLabel5.Location = new System.Drawing.Point(809, 305);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(75, 25);
             this.metroLabel5.TabIndex = 66;
@@ -438,7 +438,7 @@
             this.mTxtTienCoc.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.mTxtTienCoc.Lines = new string[] {
         "400000"};
-            this.mTxtTienCoc.Location = new System.Drawing.Point(889, 324);
+            this.mTxtTienCoc.Location = new System.Drawing.Point(895, 305);
             this.mTxtTienCoc.MaxLength = 32767;
             this.mTxtTienCoc.Multiline = true;
             this.mTxtTienCoc.Name = "mTxtTienCoc";
@@ -459,7 +459,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel7.Location = new System.Drawing.Point(803, 533);
+            this.metroLabel7.Location = new System.Drawing.Point(809, 514);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(164, 25);
             this.metroLabel7.TabIndex = 68;
@@ -483,7 +483,7 @@
             this.mTxtTienThanhToan.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.mTxtTienThanhToan.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.mTxtTienThanhToan.Lines = new string[0];
-            this.mTxtTienThanhToan.Location = new System.Drawing.Point(977, 533);
+            this.mTxtTienThanhToan.Location = new System.Drawing.Point(983, 514);
             this.mTxtTienThanhToan.MaxLength = 32767;
             this.mTxtTienThanhToan.Multiline = true;
             this.mTxtTienThanhToan.Name = "mTxtTienThanhToan";
@@ -503,7 +503,7 @@
             // 
             this.mBtnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mBtnXoa.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.mBtnXoa.Location = new System.Drawing.Point(699, 313);
+            this.mBtnXoa.Location = new System.Drawing.Point(699, 294);
             this.mBtnXoa.Name = "mBtnXoa";
             this.mBtnXoa.Size = new System.Drawing.Size(80, 36);
             this.mBtnXoa.TabIndex = 69;
@@ -515,7 +515,7 @@
             // 
             this.mBtnReload.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mBtnReload.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.mBtnReload.Location = new System.Drawing.Point(836, 592);
+            this.mBtnReload.Location = new System.Drawing.Point(842, 573);
             this.mBtnReload.Name = "mBtnReload";
             this.mBtnReload.Size = new System.Drawing.Size(80, 36);
             this.mBtnReload.TabIndex = 70;
@@ -527,7 +527,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1141, 649);
+            this.ClientSize = new System.Drawing.Size(1151, 636);
             this.Controls.Add(this.mBtnReload);
             this.Controls.Add(this.mBtnXoa);
             this.Controls.Add(this.metroLabel7);

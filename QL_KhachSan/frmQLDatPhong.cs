@@ -257,17 +257,12 @@ namespace QL_KhachSan
 
         private void mBtnReload_Click(object sender, EventArgs e)
         {
-
             mdgvPhongDaChon.DataSource = null;
 
-            foreach (Control control in mPnKhachHang.Controls)
-            {
-                if (control is TextBox textBox)
-                {
-                    textBox.ResetText();
-                }
-            }
-
+            this.mTxtTenKhachHang.ResetText();
+            this.mCboGioiTinh.SelectedIndex = -1;
+            this.mTxtDiaChi.ResetText();
+            this.mTxtSDT.ResetText();
         }
     }
 }
