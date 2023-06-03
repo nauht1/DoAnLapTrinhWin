@@ -79,7 +79,15 @@ namespace QL_KhachSan
 
         private void mBtnThongTin_Click(object sender, EventArgs e)
         {
+            frmThongTinCaNhan frmThongTin = new frmThongTinCaNhan();
+            frmThongTin.ShowDialog();
+        }
 
+        private void mBtnDangXuat_Click(object sender, EventArgs e)
+        {
+            frmDangNhap frm = new frmDangNhap();
+            this.Hide();
+            frm.ShowDialog(); 
         }
     }
 }

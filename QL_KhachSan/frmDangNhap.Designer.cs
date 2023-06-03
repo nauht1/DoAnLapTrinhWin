@@ -31,13 +31,13 @@
             this.mTxtTaiKhoan = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.mTxtMatKhau = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.mBtnDangNhap = new MetroFramework.Controls.MetroButton();
             this.cbHienMatKhau = new System.Windows.Forms.CheckBox();
             this.mBtnThoat = new MetroFramework.Controls.MetroButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +92,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 301);
             this.panel1.TabIndex = 64;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Sitka Text", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SandyBrown;
+            this.label2.Location = new System.Drawing.Point(29, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 33);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "STOWN";
             // 
             // label1
             // 
@@ -186,17 +197,6 @@
             this.mBtnThoat.UseSelectable = true;
             this.mBtnThoat.Click += new System.EventHandler(this.mBtnThoat_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Text", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SandyBrown;
-            this.label2.Location = new System.Drawing.Point(29, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 33);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "STOWN";
-            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +214,7 @@
             this.Name = "frmDangNhap";
             this.Resizable = false;
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

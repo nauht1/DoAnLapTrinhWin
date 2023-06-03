@@ -53,6 +53,7 @@
     <Compile Include="DBPhieuDichVu.cs" />
     <Compile Include="DBPhong.cs" />
     <Compile Include="DBTaiKhoan.cs" />
+    <Compile Include="DBThongTinCaNhan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

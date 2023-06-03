@@ -21,6 +21,10 @@ namespace DBLayer
             conn = new SqlConnection(sqlStringConnection);
             comm = conn.CreateCommand();
         }
+        public SqlConnection GetConnection()
+        {
+            return new SqlConnection(sqlStringConnection);
+        }
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, params SqlParameter[] p)
         {
             if (conn.State == ConnectionState.Open)
@@ -63,6 +67,59 @@ namespace DBLayer
         public SqlDataAdapter ReturnDataAdapter(string comm)
         {
             return new SqlDataAdapter(comm, conn);
+        }
+        public bool MyExcuteScalar(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
+        {
+            bool f = false;
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
+            conn.Open();
+            comm.Parameters.Clear();
+            comm.CommandText = strSQL;
+            comm.CommandType = ct;
+            foreach (SqlParameter p in param)
+                comm.Parameters.Add(p);
+            try
+            {
+                int count = (int)comm.ExecuteScalar();
+                if (count > 0)
+                    f = true;
+            }
+            catch (SqlException ex)
+            {
+                error = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return f;
+        }
+        public object ReturnObjectScalar(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
+        {
+            object obj = null;
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
+            conn.Open();
+            comm.Parameters.Clear();
+            comm.CommandText = strSQL;
+            comm.CommandType = ct;
+            foreach (SqlParameter p in param)
+                comm.Parameters.Add(p);
+            try
+            {
+                obj = comm.ExecuteScalar();
+                return obj;
+            }
+            catch (SqlException ex)
+            {
+                error = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return obj;
         }
     }
 }
