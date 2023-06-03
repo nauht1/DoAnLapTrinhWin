@@ -273,5 +273,11 @@ namespace QL_KhachSan
             this.mTxtSoDienThoai.ResetText();
             mTxtTongTien.Text = "0";
         }
+
+        private void mBtnChiTietDichVu_Click(object sender, EventArgs e)
+        {
+            frmChiTietDichVu frm = new frmChiTietDichVu();
+            frm.ShowDialog();
+        }
     }
 }

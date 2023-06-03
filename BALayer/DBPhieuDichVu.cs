@@ -29,5 +29,9 @@ namespace BALayer
                 new SqlParameter("@maDichVu", maDichVu),
                 new SqlParameter("@soLuong", soLuong));
         }
+        public DataSet LayChiTietDichVu()
+        {
+            return db.ExecuteQueryDataSet("Select * from view_ChiTietPhieuDichVu", CommandType.Text, null);
+        }
     }
 }

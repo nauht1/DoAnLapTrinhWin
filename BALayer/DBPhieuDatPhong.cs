@@ -35,5 +35,9 @@ namespace BALayer
                 new SqlParameter("@ngayNhanPhong", ngayNhanPhong),
                 new SqlParameter("@ngayTraPhong", ngayTraPhong));
         }
+        public DataSet LayDanhSachDatPhong()
+        {
+            return db.ExecuteQueryDataSet("Select * from ViewDatPhong", CommandType.Text, null);
+        }
     }
 }

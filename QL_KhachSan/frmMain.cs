@@ -89,5 +89,11 @@ namespace QL_KhachSan
             this.Hide();
             frm.ShowDialog(); 
         }
+
+        private void titleHoaDon_Click(object sender, EventArgs e)
+        {
+            frmHoaDonThanhToan frm = new frmHoaDonThanhToan();
+            frm.ShowDialog();
+        }
     }
 }

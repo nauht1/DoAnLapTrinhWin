@@ -63,11 +63,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChiTietDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietDatPhong.Designer.cs">
+      <DependentUpon>frmChiTietDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietDichVu.Designer.cs">
+      <DependentUpon>frmChiTietDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDonThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDonThanhToan.Designer.cs">
+      <DependentUpon>frmHoaDonThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -143,8 +161,17 @@
     <Compile Include="frmQLLoaiPhong.Designer.cs">
       <DependentUpon>frmQLLoaiPhong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmChiTietDatPhong.resx">
+      <DependentUpon>frmChiTietDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietDichVu.resx">
+      <DependentUpon>frmChiTietDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDonThanhToan.resx">
+      <DependentUpon>frmHoaDonThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

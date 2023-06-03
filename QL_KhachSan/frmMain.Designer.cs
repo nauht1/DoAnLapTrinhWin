@@ -42,7 +42,7 @@
             this.titleLoaiPhong = new MetroFramework.Controls.MetroTile();
             this.titleKhachHang = new MetroFramework.Controls.MetroTile();
             this.titleDanhGia = new MetroFramework.Controls.MetroTile();
-            this.titleDoanhThu = new MetroFramework.Controls.MetroTile();
+            this.titleHoaDon = new MetroFramework.Controls.MetroTile();
             this.titleNhanVien = new MetroFramework.Controls.MetroTile();
             this.label2 = new System.Windows.Forms.Label();
             this.TileTaiKhoan = new MetroFramework.Controls.MetroTile();
@@ -275,24 +275,25 @@
             this.titleDanhGia.UseTileImage = true;
             this.titleDanhGia.Click += new System.EventHandler(this.titleDanhGia_Click);
             // 
-            // titleDoanhThu
+            // titleHoaDon
             // 
-            this.titleDoanhThu.ActiveControl = null;
-            this.titleDoanhThu.BackColor = System.Drawing.Color.SteelBlue;
-            this.titleDoanhThu.ForeColor = System.Drawing.Color.White;
-            this.titleDoanhThu.Location = new System.Drawing.Point(583, 271);
-            this.titleDoanhThu.Name = "titleDoanhThu";
-            this.titleDoanhThu.Size = new System.Drawing.Size(140, 140);
-            this.titleDoanhThu.TabIndex = 61;
-            this.titleDoanhThu.Text = "Thống kê doanh thu";
-            this.titleDoanhThu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.titleDoanhThu.TileImage = ((System.Drawing.Image)(resources.GetObject("titleDoanhThu.TileImage")));
-            this.titleDoanhThu.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleDoanhThu.UseCustomBackColor = true;
-            this.titleDoanhThu.UseCustomForeColor = true;
-            this.titleDoanhThu.UseSelectable = true;
-            this.titleDoanhThu.UseStyleColors = true;
-            this.titleDoanhThu.UseTileImage = true;
+            this.titleHoaDon.ActiveControl = null;
+            this.titleHoaDon.BackColor = System.Drawing.Color.SteelBlue;
+            this.titleHoaDon.ForeColor = System.Drawing.Color.White;
+            this.titleHoaDon.Location = new System.Drawing.Point(583, 271);
+            this.titleHoaDon.Name = "titleHoaDon";
+            this.titleHoaDon.Size = new System.Drawing.Size(140, 140);
+            this.titleHoaDon.TabIndex = 61;
+            this.titleHoaDon.Text = "Quản Lý Hóa Đơn";
+            this.titleHoaDon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.titleHoaDon.TileImage = ((System.Drawing.Image)(resources.GetObject("titleHoaDon.TileImage")));
+            this.titleHoaDon.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.titleHoaDon.UseCustomBackColor = true;
+            this.titleHoaDon.UseCustomForeColor = true;
+            this.titleHoaDon.UseSelectable = true;
+            this.titleHoaDon.UseStyleColors = true;
+            this.titleHoaDon.UseTileImage = true;
+            this.titleHoaDon.Click += new System.EventHandler(this.titleHoaDon_Click);
             // 
             // titleNhanVien
             // 
@@ -398,7 +399,7 @@
             this.Controls.Add(this.titleKhachHang);
             this.Controls.Add(this.titleLoaiPhong);
             this.Controls.Add(this.titleDanhGia);
-            this.Controls.Add(this.titleDoanhThu);
+            this.Controls.Add(this.titleHoaDon);
             this.Controls.Add(this.titleNhanVien);
             this.Controls.Add(this.titleDichVu);
             this.Controls.Add(this.titleQLPhong);
@@ -428,7 +429,7 @@
         private MetroFramework.Controls.MetroTile titleLoaiPhong;
         private MetroFramework.Controls.MetroTile titleKhachHang;
         private MetroFramework.Controls.MetroTile titleDanhGia;
-        private MetroFramework.Controls.MetroTile titleDoanhThu;
+        private MetroFramework.Controls.MetroTile titleHoaDon;
         private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroButton mBtnThongTin;
         private MetroFramework.Controls.MetroButton mBtnDangXuat;
