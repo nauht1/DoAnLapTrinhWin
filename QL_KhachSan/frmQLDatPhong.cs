@@ -200,6 +200,7 @@ namespace QL_KhachSan
                 mTxtTienThanhToan.Text = (Convert.ToDecimal(mTxtTongTien.Text) - Convert.ToDecimal(mTxtTienCoc.Text)).ToString();
                 isNgayNhanPhongEdited = false;
                 isNgayTraPhongEdited = false;
+                mBtnXacNhan.Enabled = true;
             }
         }
 

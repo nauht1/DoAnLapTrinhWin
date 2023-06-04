@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mBtnDangXuat = new MetroFramework.Controls.MetroButton();
@@ -47,8 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TileTaiKhoan = new MetroFramework.Controls.MetroTile();
             this.TitlePhieuDichVu = new MetroFramework.Controls.MetroTile();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,10 +77,32 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Goudy Old Style", 26F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(116, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 43);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "HOTEL";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Goudy Old Style", 26F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(59, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(154, 43);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "STOWN";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(67, 465);
+            this.pictureBox2.Location = new System.Drawing.Point(87, 465);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(38, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(67, 514);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 514);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +123,7 @@
             // 
             this.mBtnDangXuat.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.mBtnDangXuat.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.mBtnDangXuat.Location = new System.Drawing.Point(77, 514);
+            this.mBtnDangXuat.Location = new System.Drawing.Point(97, 514);
             this.mBtnDangXuat.Name = "mBtnDangXuat";
             this.mBtnDangXuat.Size = new System.Drawing.Size(193, 38);
             this.mBtnDangXuat.TabIndex = 3;
@@ -114,7 +136,7 @@
             // 
             this.mBtnThongTin.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.mBtnThongTin.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.mBtnThongTin.Location = new System.Drawing.Point(77, 465);
+            this.mBtnThongTin.Location = new System.Drawing.Point(97, 465);
             this.mBtnThongTin.Name = "mBtnThongTin";
             this.mBtnThongTin.Size = new System.Drawing.Size(193, 43);
             this.mBtnThongTin.TabIndex = 1;
@@ -140,9 +162,9 @@
             this.titleDatPhong.BackColor = System.Drawing.Color.SteelBlue;
             this.titleDatPhong.Cursor = System.Windows.Forms.Cursors.Default;
             this.titleDatPhong.ForeColor = System.Drawing.Color.White;
-            this.titleDatPhong.Location = new System.Drawing.Point(291, 127);
+            this.titleDatPhong.Location = new System.Drawing.Point(291, 125);
             this.titleDatPhong.Name = "titleDatPhong";
-            this.titleDatPhong.Size = new System.Drawing.Size(140, 138);
+            this.titleDatPhong.Size = new System.Drawing.Size(140, 140);
             this.titleDatPhong.TabIndex = 18;
             this.titleDatPhong.Text = "Quản Lý Đặt Phòng";
             this.titleDatPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -160,9 +182,9 @@
             this.titleQLPhong.ActiveControl = null;
             this.titleQLPhong.BackColor = System.Drawing.Color.SteelBlue;
             this.titleQLPhong.ForeColor = System.Drawing.Color.White;
-            this.titleQLPhong.Location = new System.Drawing.Point(437, 127);
+            this.titleQLPhong.Location = new System.Drawing.Point(437, 125);
             this.titleQLPhong.Name = "titleQLPhong";
-            this.titleQLPhong.Size = new System.Drawing.Size(140, 138);
+            this.titleQLPhong.Size = new System.Drawing.Size(140, 140);
             this.titleQLPhong.TabIndex = 35;
             this.titleQLPhong.Text = "Quản Lí Phòng";
             this.titleQLPhong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -364,28 +386,6 @@
             this.TitlePhieuDichVu.UseStyleColors = true;
             this.TitlePhieuDichVu.UseTileImage = true;
             this.TitlePhieuDichVu.Click += new System.EventHandler(this.TitlePhieuDichVu_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Goudy Old Style", 26F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(59, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 43);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "STOWN";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Goudy Old Style", 26F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(116, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 43);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "HOTEL";
             // 
             // frmMain
             // 

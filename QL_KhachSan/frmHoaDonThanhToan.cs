@@ -73,7 +73,14 @@ namespace QL_KhachSan
             mTxtTenKhachHang.Text = mdgvHoaDonChuaThanhToan.Rows[r].Cells["TenKhachHang"].Value.ToString();
             mTxtSDT.Text = mdgvHoaDonChuaThanhToan.Rows[r].Cells["SoDienThoai"].Value.ToString();
             mTxtTienPhong.Text = mdgvHoaDonChuaThanhToan.Rows[r].Cells["TienPhong"].Value.ToString();
-            mTxtTienDichVu.Text = mdgvHoaDonChuaThanhToan.Rows[r].Cells["TienDichVu"].Value.ToString();
+            if (decimal.TryParse(mdgvHoaDonChuaThanhToan.Rows[r].Cells["TienDichVu"].Value.ToString(), out decimal tienDichVuValue))
+            {
+                mTxtTienDichVu.Text = tienDichVuValue.ToString();
+            }
+            else
+            {
+                mTxtTienDichVu.Text = "0";
+            }
             mTxtTongTien.Text = (Convert.ToDecimal(mTxtTienPhong.Text) + Convert.ToDecimal(mTxtTienDichVu.Text)).ToString();
             mTxtTienThanhToan.Text = (Convert.ToDecimal(mTxtTongTien.Text) - Convert.ToDecimal(mTxtTienCoc.Text)).ToString();
         }
